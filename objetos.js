@@ -15,8 +15,10 @@ let persona2={
     telefono: 3043333333,
     email: "micorreo@ejemplo.com",
     edad: 25,
-    nombrecompleto: function(){return
-this.nombre +"  "+this.apellido}
+    nombrecompleto: function(){return this.nombre +"  "+this.apellido}
 }
-console.log(persona["nombre"]);
+for(nombrePropiedad in persona){
+    console.log(persona["nombre"]);
 console.log(persona.apellido);
+}
+console.log(persona2.nombrecompleto());
