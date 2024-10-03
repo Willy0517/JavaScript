@@ -55,7 +55,7 @@ console.log(padre);
 console.log(madre);
 padre.telefono=1234567;
 console.log(padre)
-madre.telefono=098765;
+madre.telefono=98765;
 console.log(madre);
 //closure crear objeto con una funcion anonima
 function fSaludar (nombre){
@@ -91,3 +91,13 @@ function miFuncion(){
 console.log(miFuncion());
 console.log(count);
 
+var x=10;
+function foo(){
+    var y=20;
+    function bar(){
+        var z=15;
+        var output = x+y+z;
+        return output;
+    }
+    return bar;
+}
